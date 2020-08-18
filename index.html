@@ -15,6 +15,8 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -22,6 +24,27 @@
 		</noscript>
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<script>
+			$(function(){
+    var calcNewYear = setInterval(function(){
+        date_future = new Date('2020/11/30 13:00:00');
+        date_now = new Date();
+        console.log(date_now)
+
+        seconds = Math.floor((date_future - (date_now))/1000);
+        minutes = Math.floor(seconds/60);
+        hours = Math.floor(minutes/60);
+        days = Math.floor(hours/24);
+        
+        hours = hours-(days*24);
+        minutes = minutes-(days*24*60)-(hours*60);
+        seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
+
+        $("#time").text("Days: " + days + " Hours: " + hours + " Minutes: " + minutes + " Seconds: " + seconds);
+    },1000);
+});
+
+		</script>
 	</head>
 	<body class="landing">
 
@@ -55,11 +78,13 @@
 		<!-- Banner -->
 			<section id="banner">
 				<div class="inner">
-					<h2>Wedding Invitation</h2>
-					<p><b style="color: white;">Mr. Suraj Ramlal Tiwari </b> <i>Weds</i> <b style ="color: white;">Miss. Nisha Sandeep Ozha</b></p>
-					<ul class="actions">
+					<p style="font-family: 'Brush Script MT'; font-size: 100px; margin-bottom: 0em !important;">Suraj & Nisha</p>
+					<div><img src="images/ico-heart2.png"/></div>
+					<span>November 30, 2020 in Hyderabad</span>
+					<div id="time"></div>
+					<!-- <ul class="actions">
 						<li><a href="#one" class="button big scrolly">Learn More</a></li>
-					</ul>
+					</ul> -->
 				</div>
 			</section>
 
@@ -237,6 +262,8 @@
 					&copy; Copyright. All rights reserved. Design by <a href="http://www.html5webtemplates.co.uk">Responsive Web Templates</a>
 				</span>
 			</footer>
-
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</body>
 </html>
