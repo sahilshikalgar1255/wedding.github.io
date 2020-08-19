@@ -1243,7 +1243,7 @@
 	#banner {
 		background-attachment: scroll,						fixed;
 		background-color: #494d53;
-		background-image: url("images/overlay.png"), url("../images/banner.jpg");
+		background-image: url("images/overlay.png"), url("../images/image4.jpg");
 		background-position: top left,					center center;
 		background-repeat: repeat,						no-repeat;
 		background-size: auto,						cover;
@@ -1387,14 +1387,37 @@
 	.numberFont{
 	border: solid;
     padding: 10px 10px 10px 10px;
-    height: 100%;
-    width: 64px;
-		font-family: Tusj;
-		font-size :30px
+    max-width: 250px !important;
+    display: inline-block;
+	font-family: Tusj;
+	font-size :30px;
+	position: relative;
+    justify-content: center;
+	margin-bottom: 4px;
+	margin-right: 4px;
+	border-color: rgb(0 255 186 / 15%);
+	color: #bd6a22;
 	}
 	#weddingDate{
 		
 		font-size: 21px;
 		font-family: SpecialElite; 
 		margin-bottom: 1em;
+		
+	}
+	#weddingHeader{
+		font-size:30px;
+		font-family:AlexBrush;
+		color: #dee2e6;
+		
+	}
+	#brideName{
+		font-family: AlexBrush; 
+		font-size: 90px;
+		margin-bottom: 0em !important;
+		color: #e0555a;
+	}
+	.menu{
+		font-family: Tusj;
+		font-size :20px;
 	}

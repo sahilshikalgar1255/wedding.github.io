@@ -29,7 +29,6 @@
     var calcNewYear = setInterval(function(){
         date_future = new Date('2020/11/30 13:00:00');
         date_now = new Date();
-        console.log(date_now)
 
         seconds = Math.floor((date_future - (date_now))/1000);
         minutes = Math.floor(seconds/60);
@@ -54,25 +53,25 @@
 
 		<!-- Header -->
 			<header id="header" class="alt skel-layers-fixed">
-				<h1><a href="index.html">WEDDING INVITATION</a></h1>
+				<h1><a href="index.html" id="weddingHeader">Suraj & Nisha</a></h1>
 				<nav id="nav">
 					<ul>
-						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html" class="menu">Home</a></li>
 					</ul>
 				</nav>
 			</header>
 		<!-- Banner -->
 			<section id="banner">
 				<div class="inner">
-					<p style="font-family: 'AlexBrush'; font-size: 70px; margin-bottom: 0em !important;">Suraj & Nisha</p>
+					<div id="brideName">Suraj & Nisha</div>
 					<div><img style ="margin-bottom: 1em;" src="images/ico-heart2.png"/></div>
 					<div class="container">
 					<div id ="weddingDate">November 30, 2020 in Hyderabad</div>
-					<div class ="row">
-						<div class="col-sm-3 numberFont" id="day"></div>
-						<div class="col-sm-3 numberFont" id="hours"></div>
-						<div class="col-sm-3 numberFont" id="minutes"></div>
-						<div class="col-sm-3 numberFont" id="seconds"></div>
+					<div class ="row" style="position: relative; justify-content: center">
+						<div class="col-sm-3 numberFont"  id="day"></div>
+						<div class="col-sm-3 numberFont"  id="hours"></div>
+						<div class="col-sm-3 numberFont"  id="minutes"></div>
+						<div class="col-sm-3 numberFont" style ="margin-bottom: 3px;" id="seconds"></div>
 					</div>
 					<div>
 					<div id="time"></div>
