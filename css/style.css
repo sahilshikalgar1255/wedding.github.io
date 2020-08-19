@@ -1,14 +1,26 @@
 @import url(font-awesome.min.css);
 @import url("http://fonts.googleapis.com/css?family=Lato:300,700");
 
-/*
-	Drift by Pixelarity
-	pixelarity.com @pixelarity
-	License: pixelarity.com/license
-*/
 
-/* Basic */
-
+@font-face {
+  font-family: AlexBrush;
+  src: url('../fonts/AlexBrush-Regular.ttf');
+}
+/* header*/
+@font-face {
+  font-family: Ewert;
+  src: url('../fonts/Ewert-Regular.ttf');
+}
+/* for number*/
+@font-face {
+  font-family: Tusj;
+  src: url('../fonts/FFF_Tusj.ttf');
+}
+/* wedding date*/
+@font-face {
+  font-family: SpecialElite;
+  src: url('../fonts/SpecialElite.ttf');
+}
 	body {
 		background: #fff;
 	}
@@ -1371,3 +1383,18 @@
 		#footer .copyright {
 			font-size: 0.8em;
 		}
+		
+	.numberFont{
+	border: solid;
+    padding: 10px 10px 10px 10px;
+    height: 100%;
+    width: 64px;
+		font-family: Tusj;
+		font-size :30px
+	}
+	#weddingDate{
+		
+		font-size: 21px;
+		font-family: SpecialElite; 
+		margin-bottom: 1em;
+	}

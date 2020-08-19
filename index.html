@@ -40,7 +40,11 @@
         minutes = minutes-(days*24*60)-(hours*60);
         seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
 
-        $("#time").text("Days: " + days + " Hours: " + hours + " Minutes: " + minutes + " Seconds: " + seconds);
+        $("#day").text(days);
+		$("#hours").text(hours);
+		$("#minutes").text(minutes);
+		$("#seconds").text(seconds);
+		
     },1000);
 });
 
@@ -54,36 +58,24 @@
 				<nav id="nav">
 					<ul>
 						<li><a href="index.html">Home</a></li>
-						<!-- <li>
-							<a href="" class="icon fa-angle-down">Layouts</a>
-							<ul>
-								<li><a href="left-sidebar.html">Left Sidebar</a></li>
-								<li><a href="right-sidebar.html">Right Sidebar</a></li>
-								<li><a href="no-sidebar.html">No Sidebar</a></li>
-								<li>
-									<a href="">Submenu</a>
-									<ul>
-										<li><a href="#">Option 1</a></li>
-										<li><a href="#">Option 2</a></li>
-										<li><a href="#">Option 3</a></li>
-										<li><a href="#">Option 4</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li> -->
 					</ul>
 				</nav>
 			</header>
 		<!-- Banner -->
 			<section id="banner">
 				<div class="inner">
-					<p style="font-family: 'Brush Script MT'; font-size: 60px; margin-bottom: 0em !important;">Suraj & Nisha</p>
-					<div><img src="images/ico-heart2.png"/></div>
-					<span>November 30, 2020 in Hyderabad</span>
+					<p style="font-family: 'AlexBrush'; font-size: 70px; margin-bottom: 0em !important;">Suraj & Nisha</p>
+					<div><img style ="margin-bottom: 1em;" src="images/ico-heart2.png"/></div>
+					<div class="container">
+					<div id ="weddingDate">November 30, 2020 in Hyderabad</div>
+					<div class ="row">
+						<div class="col-sm-3 numberFont" id="day"></div>
+						<div class="col-sm-3 numberFont" id="hours"></div>
+						<div class="col-sm-3 numberFont" id="minutes"></div>
+						<div class="col-sm-3 numberFont" id="seconds"></div>
+					</div>
+					<div>
 					<div id="time"></div>
-					<!-- <ul class="actions">
-						<li><a href="#one" class="button big scrolly">Learn More</a></li>
-					</ul> -->
 				</div>
 			</section>
 
