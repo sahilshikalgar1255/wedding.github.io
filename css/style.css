@@ -1421,3 +1421,35 @@
 		font-family: Tusj;
 		font-size :20px;
 	}
+	.countdown-col{
+		text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 12px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+	}
+	#countdown{
+	color: #fff;
+    padding-top: 20px;
+	}
+	.countdown-time{
+	display: block;
+    font-size: 34px;
+    line-height: 38px;
+    font-family: Tusj;
+	position: relative;
+    justify-content: center;
+	margin-bottom: 4px;
+	margin-right: 4px;
+	color: #bd6a22;
+	}
+	.dayHourMinSecFont{
+		font-size: 25px;
+    font-family: Tusj;
+	}
+	.untilGetMarried{
+		font-family: Tusj;
+		font-size :25px;
+	}
